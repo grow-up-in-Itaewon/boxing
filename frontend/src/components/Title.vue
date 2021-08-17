@@ -1,3 +1,10 @@
 <template>
-    <v-toolbar-title>FightClub ##</v-toolbar-title>
+    <v-toolbar-title>{{ title }}</v-toolbar-title>
 </template>
+
+<script>
+export default {
+    props: ['title']
+}
+
+</script>
