@@ -1,8 +1,27 @@
 // webpack.config.js
+const { VueLoaderPlugin } = require('vue-loader')
+
 
 module.exports = {
     module: {
       rules: [
+        {
+          test: /\.vue$/,
+          loader: 'vue-loader'
+        },
+        {
+          test: /\.ext$/,
+          use: ['cache-loader', ...loaders],
+          include: path.resolve('src'),
+        },
+        {
+          test: /\.js$/,
+          loader: 'babel-loader',
+          exclude: file => (
+            /node_modules/.test(file) &&
+            !/\.vue\.js/.test(file)
+          )
+        },
         {
           test: /\.s(c|a)ss$/,
           use: [
@@ -26,5 +45,9 @@ module.exports = {
           ],
         },
       ],
-    }
+    },
+    plugins: [
+      // make sure to include the plugin!
+      new VueLoaderPlugin()
+    ]
   }

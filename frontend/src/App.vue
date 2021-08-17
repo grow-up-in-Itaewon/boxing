@@ -6,11 +6,8 @@
       dark
     >
       <v-app-bar-nav-icon @click="drawer= !drawer"></v-app-bar-nav-icon>
-      <v-toolbar-title>FightClub</v-toolbar-title>
+      <site-title></site-title>
       <v-spacer></v-spacer>
-      <v-btn icon to="/about">
-        <v-icon>mdi-magnify</v-icon>
-      </v-btn>
     </v-app-bar>
 
     <v-navigation-drawer app v-model="drawer">
@@ -85,7 +82,10 @@
 </template>
 
 <script>
+import SiteTitle from '@/components/Title'
+
 export default {
+  components: { SiteTitle },
   name: "App",
   data: () => ({
       icons: [
