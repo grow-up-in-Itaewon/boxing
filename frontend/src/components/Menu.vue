@@ -3,10 +3,10 @@
         <v-list-item>
             <v-list-item-content>
                 <v-list-item-title class="text-h6">
-                    Application
+                    Fight Club
                 </v-list-item-title>
                 <v-list-item-subtitle>
-                    subtext
+                    격투기용품 브랜드
                 </v-list-item-subtitle>
             </v-list-item-content>
         </v-list-item>
@@ -64,18 +64,31 @@ export default {
    data: () => ({
       items: [
         {
-          title: 'Home',
+          title: '신상품',
           action: 'mdi-ticket',
           to: '/about'
         },
         {
-          title: '신상품',
+          title: '글러브',
           action: 'mdi-ticket',
+          active: false,
           subItems: [
               {
-                  title: '헤비히터',
+                  title: '8oz(백글러브)',
+                  to: '/about',
+              },
+              {
+                  title: '10oz(트레이닝)',
                   to: '/about'
-              }
+              },
+              {
+                  title: '12oz(트레이닝)',
+                  to: '/about'
+              },
+              {
+                  title: '14oz~16oz(트레이닝)',
+                  to: '/about'
+              },
           ]
         },
         {
@@ -92,3 +105,9 @@ export default {
     })
 }
 </script>
+
+<style scoped>
+.v-list-item--active {
+  background-color: cyan;
+}
+</style>

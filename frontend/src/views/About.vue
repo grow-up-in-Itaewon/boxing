@@ -1,7 +1,7 @@
 <template>
   <div class="about">
     <h1 
-      v-for="i in 30" 
+      v-for="i in 10"
       :key="i"
     >
       This is an about page

@@ -37,13 +37,14 @@ export default {
   components: { SiteTitle, SiteFooter, SiteMenu },
   name: "App",
   data: () => ({
-      icons: [
-        'mdi-facebook',
-        'mdi-twitter',
-        'mdi-linkedin',
-        'mdi-instagram',
-      ],
-      drawer: false,
+      // Props
+      // icons: [
+      //   'mdi-facebook',
+      //   'mdi-twitter',
+      //   'mdi-linkedin',
+      //   'mdi-instagram',
+      // ],
+      drawer: true,
       title: 'Fight Club',
       footer: 'Fight Club',
       right: null,

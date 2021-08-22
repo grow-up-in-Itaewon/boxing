@@ -9,11 +9,11 @@
         flat
         tile
       >
-        <v-card-title class="teal">
+        <!-- <v-card-title class="teal">
           <strong class="subheading">Social networks</strong>
           <v-spacer></v-spacer>
           
-        </v-card-title>
+        </v-card-title> -->
 
         <v-card-text class="py-2 white--text text-center">
           {{ new Date().getFullYear() }} — <strong>{{ footer }}</strong>
