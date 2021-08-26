@@ -1,0 +1,13 @@
+spring:
+  security:
+    user:
+      name: user
+      password: user
+  datasource:
+    url: jdbc:mariadb://x2.xasquatch.net:3306
+    driver-class-name: org.mariadb.jdbc.Driver
+    username: dj
+    password: 
+
+server:
+  port: 80
